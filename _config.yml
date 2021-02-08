@@ -1,7 +1,8 @@
 # (string) Title of your wiki
 title: Kou Wiki
 # (string) Description of your wiki
-description: 야가미 코우의 모든 것을 담아낸 
+description: 야가미 코우의 모든 것을 담아낸 위키
+
 # (boolean) Enable/disable wiki page list in sidebar
 show_wiki_pages: true
 # (integer) Maximum number of wiki page to shown in sidebar
