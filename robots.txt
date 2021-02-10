@@ -1,0 +1,3 @@
+ser-agent: *
+Allow: /
+Sitemap: https://yagamiharume.github.io/KouWiki/sitemap_full.xml
