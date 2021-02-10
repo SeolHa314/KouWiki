@@ -1,6 +1,6 @@
 ---
 layout: none
-sitemap: false
+sitemap: true
 is_wiki_page: false
 permalink: /sitemap_full.xml
 ---
