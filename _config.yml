@@ -39,10 +39,10 @@ use_prose_io: false
 # - github : it uses internal github repository search
 # - google : it uses cse search bar, you need to configure google_cse_token
 #
-search_engine : "js_rss"
+search_engine : "js"
 # Setting google custom search engine for google
 # cse search bar (https://cse.google.it/cse/)
-google_cse_token: "https://cse.google.com/cse.js?cx=987da0d4ed56d9aab"
+google_cse_token: 
 
 # (string) path of site root. Normally it's must be empty because _config.yml resides in the root of your repository.
 # If you have _config.yml and your site in a subfolder, then change this config accordly 
