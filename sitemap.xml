@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://yagamiharume.github.io/KouWiki/main_page</loc>
+  <lastmod>2021-02-10T23:15:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yagamiharume.github.io/KouWiki/kou_yagami</loc>
+  <lastmod>2021-02-10T23:15:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yagamiharume.github.io/KouWiki/%EC%9E%91%EC%A4%91%20%ED%96%89%EC%A0%81-11%EA%B6%8C</loc>
+  <lastmod>2021-02-10T23:15:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yagamiharume.github.io/KouWiki/%EC%9E%91%EC%A4%91%20%ED%96%89%EC%A0%81-5%EA%B6%8C</loc>
+  <lastmod>2021-02-10T23:15:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yagamiharume.github.io/KouWiki/%EC%9E%91%EC%A4%91%20%ED%96%89%EC%A0%81</loc>
+  <lastmod>2021-02-10T23:15:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
