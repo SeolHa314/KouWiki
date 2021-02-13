@@ -27,6 +27,8 @@ permalink: /sitemap_test.xml
       {% else %}
         <priority>{{ post.sitemap.priority }}</priority>
       {% endif %}
+    </url>
+  {% endfor %}
   {% for post in site.pages %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
