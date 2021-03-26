@@ -18,6 +18,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "14.x"
+      - name: "Merge changes from master"
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git merge origin/master
       - name: "Install dependencies and render"
         run: |
           cd nodejs
@@ -27,8 +32,6 @@ jobs:
         run: |
           git merge master
           git add wiki-rendered/*
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
           git commit -m "Rendered wiki" -a
       - name: "Push to wiki branch"
         uses: ad-m/github-push-action@master
