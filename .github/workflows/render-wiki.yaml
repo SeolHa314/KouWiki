@@ -25,6 +25,7 @@ jobs:
           node src/index.js ../wiki/ -o ../wiki-rendered
       - name: "Add and commit newly rendered file to git"
         run: |
+          git merge master
           git add wiki-rendered/*
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
