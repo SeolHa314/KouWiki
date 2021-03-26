@@ -67,7 +67,7 @@ kramdown:
 defaults:
  - 
     scope:
-      path: "wiki-processed"
+      path: "wiki-rendered"
     values:
       permalink: /:basename
  -
