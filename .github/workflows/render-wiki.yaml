@@ -1,0 +1,38 @@
+name: Render wiki Markdowns on master push
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Use Node.js
+        uses: actions/setup-node@1
+        with:
+          node-version: "14.x"
+      - name: "Change to wiki branch"
+        run: "git checkout wiki"
+      - name: "Install dependencies and render"
+        run: |
+          "cd nodejs"
+          "npm install"
+          "node src/index.js ../wiki/ -o ../wiki-rendered"
+      - name: "Add and commit newly rendered file to git"
+        run: |
+          "cd ../"
+          "git add wiki-rendered/*"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Rendered wiki" -a
+      - name: "Push to wiki branch"
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          branch: wiki
