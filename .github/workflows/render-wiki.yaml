@@ -13,14 +13,11 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+          ref: wiki
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: "14.x"
-      - name: "Change to wiki branch"
-        run: |
-          git checkout "${GITHUB_REF:11}"
-          "git checkout wiki"
       - name: "Install dependencies and render"
         run: |
           "cd nodejs"
