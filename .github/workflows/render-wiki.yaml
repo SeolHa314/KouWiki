@@ -20,13 +20,13 @@ jobs:
           node-version: "14.x"
       - name: "Install dependencies and render"
         run: |
-          "cd nodejs"
-          "npm install"
-          "node src/index.js ../wiki/ -o ../wiki-rendered"
+          cd nodejs
+          npm install
+          node src/index.js ../wiki/ -o ../wiki-rendered
       - name: "Add and commit newly rendered file to git"
         run: |
-          "cd ../"
-          "git add wiki-rendered/*"
+          cd ../
+          git add wiki-rendered/*
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git commit -m "Rendered wiki" -a
