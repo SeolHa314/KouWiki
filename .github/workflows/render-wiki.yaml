@@ -31,7 +31,7 @@ jobs:
       - name: "Add and commit newly rendered file to git"
         run: |
           git add -A
-          git commit -m "Rendered wiki"
+          git diff-index --quiet HEAD || git commit -m "Rendered wiki"
       - name: "Push to wiki branch"
         uses: ad-m/github-push-action@master
         with:
