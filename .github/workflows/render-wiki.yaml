@@ -30,9 +30,8 @@ jobs:
           node src/index.js ../wiki/ -o ../wiki-rendered
       - name: "Add and commit newly rendered file to git"
         run: |
-          git merge master
-          git add wiki-rendered/*
-          git commit -m "Rendered wiki" -a
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Rendered wiki"
       - name: "Push to wiki branch"
         uses: ad-m/github-push-action@master
         with:
